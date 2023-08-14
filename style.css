@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{ 
+    background: #000;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+    z-index: 100;
+    background: #0404045f;
+    
+}
+header .logo img
+{
+    max-width: 60px;  
+}
+header .article
+{
+    display: flex;
+}
+.headline
+{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+
+
+}
+.navigation
+{
+    display: flex;
+}
+.navigation li
+{
+    list-style: none;
+    margin: 0 50px;
+}
+.navigation li a
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 6px 20px;
+    border-radius: 20px;
+
+}
+.navigation li a.active
+{
+    background: solid rgba(255, 255, 2555, 0.5);
+    color: rgb(255, 255, 255) ;
+}
+.navigation li a:hover
+{
+    background: #fff;
+    color: #709a4b;
+}
+.inputname
+{
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+.inputname input
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 2555, 0.75);
+    outline: none;
+    border-radius: 10px;
+    padding: 0 10px 0 45px;
+}
+.inputname input::placeholder
+{
+    color: rgba(255, 255, 2555, 0.5);
+}
+.inputname .fa-keyboard
+{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    padding-right: 10px;
+    color: #fff;
+    border-right: 1px solid #fff;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.banner .bg 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    height: 100%;
+    object-fit: cover;
+}
+.container
+{
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+}
+.mainTitle
+{
+    max-width: 1000px;
+}
+.banner .container p
+{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 2em;
+    color: #fff;
+    margin: 10px 10px 20px;
+}
+.banner .container .chuky
+{
+    position: relative;
+    max-width: 350px;
+    position: absolute;
+    right: 0px;
+    padding-right: 100px;
+
+    
+}
+.banner .container #content
+{
+    display: none;
+}
+.banner .container .addition
+{
+    position: relative;
+    color: #fff;
+    padding-top: 110px;
+}
+.addition .loca
+{
+    padding-bottom: 10px;
+}
+.addition .time 
+{
+    padding-bottom: 10px;
+}
+.loca span
+{
+    padding-left: 5px;
+}
+.addition .fa-solid 
+{
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    header {
+        padding: 5px 20px;
+    }
+    .inputname {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .banner {
+        padding: 0 20px;
+    }
+}
