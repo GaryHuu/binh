@@ -148,10 +148,6 @@ header {
 .container .mainTitle {
 }
 
-.banner .container #content {
-  display: none;
-}
-
 .banner .container p {
   font-size: 1em;
   font-weight: 400;
@@ -220,7 +216,7 @@ header {
   }
 
   .container {
-    padding: 0 15px 15px;
+    padding: 0 10px 15px;
     width: 100%;
     margin: 0;
     max-width: 100%;
@@ -233,10 +229,12 @@ header {
 
   .banner .container p {
     line-height: unset;
+    text-shadow: 2px 2px 3px #000000;
   }
 
   .addition span,
   .addition a {
     font-size: 12px;
+    text-shadow: 2px 2px 3px #000000;
   }
 }
