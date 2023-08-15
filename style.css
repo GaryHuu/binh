@@ -1,191 +1,241 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-*
-{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: unset;
+}
+
+.d-flex {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 30px;
+  background-color: #0404045f;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-wrapper {
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-wrapper .logo {
+  width: 60px;
+}
+
+.logo-wrapper .headline {
+  color: #fff;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.right .navigation {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.right .navigation li a {
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 6px 20px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.right .navigation li a:hover {
+  background: #fff;
+  color: #709a4b;
+}
+
+.right .inputname {
+  position: relative;
+  width: 300px;
+  height: 40px;
+}
+
+.right .inputname input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 2555, 0.75);
+  outline: none;
+  border-radius: 10px;
+  padding: 0 10px 0 45px;
+}
+
+.right .inputname .fa-keyboard {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  padding-right: 10px;
+  color: #fff;
+  border-right: 1px solid #fff;
+}
+
+.right .inputname input::placeholder {
+  color: rgba(255, 255, 2555, 0.5);
+}
+
+.banner {
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 90%;
+  overflow: hidden;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: center;
+  gap: 8px;
+}
+
+.burger div {
+  height: 4px;
+  width: 35px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.container {
+  height: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.container .mainTitle {
+}
+
+.banner .container #content {
+  display: none;
+}
+
+.banner .container p {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 2em;
+  color: #fff;
+  margin: 10px 10px 0px;
+}
+
+.chuky-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chuky {
+  width: 350px;
+}
+
+.banner .container .addition {
+  color: #fff;
+}
+
+.loca span {
+  padding-left: 5px;
+}
+
+.addition a {
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  header {
+    padding: 15px;
+  }
+  .right {
+    position: absolute;
+    right: 0;
+    top: 96px;
+    height: calc(100vh - 96px);
+    width: 100%;
+    flex-direction: column;
+    align-items: unset;
+    background-color: #0404045f;
+    padding-right: 15px;
+    transform: translateX(100%);
+    transition: all linear 0.3s;
+  }
+
+  .right.active {
+    transform: translateX(0);
+  }
+
+  .right .navigation {
+    flex-direction: column;
+    align-items: unset;
+    width: 250px;
+  }
+
+  .right .inputname {
+    width: 250px;
+    margin-left: 20px;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .container {
+    padding: 0 15px 15px;
+    width: 100%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body
-{ 
-    background: #000;
-}
-header
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 100px;
-    z-index: 100;
-    background: #0404045f;
-    
-}
-header .logo img
-{
-    max-width: 60px;  
-}
-header .article
-{
-    display: flex;
-}
-.headline
-{
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
+    max-width: 100%;
+    justify-content: flex-end;
+  }
 
+  .chuky {
+    width: 150px;
+  }
 
-}
-.navigation
-{
-    display: flex;
-}
-.navigation li
-{
-    list-style: none;
-    margin: 0 50px;
-}
-.navigation li a
-{
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 1px;
-    padding: 6px 20px;
-    border-radius: 20px;
+  .banner .container p {
+    line-height: unset;
+  }
 
-}
-.navigation li a.active
-{
-    background: solid rgba(255, 255, 2555, 0.5);
-    color: rgb(255, 255, 255) ;
-}
-.navigation li a:hover
-{
-    background: #fff;
-    color: #709a4b;
-}
-.inputname
-{
-    position: relative;
-    width: 300px;
-    height: 40px;
-}
-.inputname input
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: white;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 2555, 0.75);
-    outline: none;
-    border-radius: 10px;
-    padding: 0 10px 0 45px;
-}
-.inputname input::placeholder
-{
-    color: rgba(255, 255, 2555, 0.5);
-}
-.inputname .fa-keyboard
-{
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    padding-right: 10px;
-    color: #fff;
-    border-right: 1px solid #fff;
-}
-.banner
-{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    padding: 0 100px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.banner .bg 
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;    
-    height: 100%;
-    object-fit: cover;
-}
-.container
-{
-    position: relative;
-    z-index: 1;
-    max-width: 1000px;
-}
-.mainTitle
-{
-    max-width: 1000px;
-}
-.banner .container p
-{
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 2em;
-    color: #fff;
-    margin: 10px 10px 20px;
-}
-.banner .container .chuky
-{
-    position: relative;
-    max-width: 350px;
-    position: absolute;
-    right: 0px;
-    padding-right: 100px;
-
-    
-}
-.banner .container #content
-{
-    display: none;
-}
-.banner .container .addition
-{
-    position: relative;
-    color: #fff;
-    padding-top: 110px;
-}
-.addition .loca
-{
-    padding-bottom: 10px;
-}
-.addition .time 
-{
-    padding-bottom: 10px;
-}
-.loca span
-{
-    padding-left: 5px;
-}
-.addition .fa-solid 
-{
-    font-weight: 600;
-}
-@media (max-width: 768px) {
-    header {
-        padding: 5px 20px;
-    }
-    .inputname {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    .banner {
-        padding: 0 20px;
-    }
+  .addition span {
+    font-size: 12px;
+  }
 }

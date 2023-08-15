@@ -1,50 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Thai Binh's Graduation Invitation</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/744b9c9cd8.js" crossorigin="anonymous"></script>
-</head>
-<body>
-   <header>
-    <a href="#" class="logo"><img src=logo.png ></a>
-    <article class="headline">THAI BINH'S GRADUATION</article>
-    <ul class="navigation">
-        <li><a href="https://goo.gl/maps/tQ5wJFmwV9oKSSmW6" target="_blank" class="active">Location</a></li>
-        <li><a href="https://drive.google.com/drive/folders/1MBwd2mtQ3QmtgdoDWir6e_72UwwSDGBZ" class="active">Graduation Photos</a></li>
-        <li><a href="https://www.facebook.com/profile.php?id=100033651873213" target="_blank" class="active">Contact</a></li>
-    </ul>
-    <div class="inputname">
-        <input type="text" id="nameInput" placeholder="Type Your Name">
-        <i class="fa-solid fa-keyboard"></i>
-    </div>
-   </header>
-    <div class="banner">
-    <img src="bg.jpg" class="bg">
-    <div class="container">
-        <img src="title1.png" class="mainTitle">
-        <div id="content">
-            <p>Dear <span id="userName"></span>,</p>
-            <p>I am delighted to announce that this Sunday is my graduation ceremony and it would be great if you can take your time to come and celebrate with me on this special occasion. Please let me know if any inconvenience.
-            <br> Hope to see you soon ! </p>
-            </p>
-            <img src="sign.png" class="chuky">
-            <div class="addition">
-                <div class="loca">
-                <i class="fa-solid fa-location-dot"> <span>Location: Main Hall, Ho Chi Minh City University of Banking</span></i>
-                </div>
-                 <div class="time">
-                <i class="fa-solid fa-clock"> <span>Time: From 15:30 to 17:00 - 20 Aug 2023</span></i>
-                 </div>
-                 <div class="phone">
-                <i class="fa-solid fa-phone"> <span>Call me at: 0961 423 147</span></i>
-                 </div>
-            </div>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/744b9c9cd8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="d-flex logo-wrapper">
+        <a href="#" class="logo"><img src="logo.png" /></a>
+        <article class="headline">THAI BINH'S GRADUATION</article>
+      </div>
+      <div class="right">
+        <ul class="navigation">
+          <li>
+            <a
+              href="https://goo.gl/maps/tQ5wJFmwV9oKSSmW6"
+              target="_blank"
+              class="active"
+              >Location</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/drive/folders/1MBwd2mtQ3QmtgdoDWir6e_72UwwSDGBZ"
+              target="_blank"
+              class="active"
+              >Graduation Photos</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100033651873213"
+              target="_blank"
+              class="active"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="inputname">
+          <input type="text" id="nameInput" placeholder="Type Your Name" />
+          <i class="fa-solid fa-keyboard"></i>
         </div>
-        
+      </div>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+    <div class="banner" style="background-image: url(bg.jpg)">
+      <div class="container">
+        <img src="title1.png" class="mainTitle" />
+        <div id="content">
+          <p>Dear <span id="userName"></span>,</p>
+          <p>
+            I am delighted to announce that this Sunday is my graduation
+            ceremony and it would be great if you can take your time to come and
+            celebrate with me on this special occasion. Please let me know if
+            any inconvenience. <br />
+            Hope to see you soon !
+          </p>
+          <div class="chuky-wrapper">
+            <img src="sign.png" class="chuky" />
+          </div>
+          <div class="addition">
+            <div class="loca">
+              <i class="fa-solid fa-location-dot">
+                <span
+                  >Location: Main Hall, Ho Chi Minh City University of
+                  Banking</span
+                ></i
+              >
+            </div>
+            <div class="time">
+              <i class="fa-solid fa-clock">
+                <span>Time: From 15:30 to 17:00 - 20 Aug 2023</span></i
+              >
+            </div>
+            <div class="phone">
+              <i class="fa-solid fa-phone">
+                <a href="tel:0961423147">Call me at: 0961 423 147</a></i
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-   </div>
+  </body>
+</html>
