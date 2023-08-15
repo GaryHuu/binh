@@ -235,7 +235,8 @@ header {
     line-height: unset;
   }
 
-  .addition span {
+  .addition span,
+  .addition a {
     font-size: 12px;
   }
 }
